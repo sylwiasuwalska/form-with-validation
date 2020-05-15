@@ -4,33 +4,33 @@ import "./Form.css";
 import Col from "react-bootstrap/Col";
 
 function FormExample(props) {
+  const initialErrors = {
+    name: "Please, provide a name.",
+    number: "Number must be 8 characters long.",
+    email: "Please provide a valid e-mail.",
+    password:
+      "Password must be minimum eight characters, at least one letter and one number.",
+    text: "Enter your message.",
+    radioBoxOption: "One of these options is required.",
+    checkboxOption: "This checkbox is required.",
+  };
+
+  const [validated, setValidate] = useState(false);
+  const [stateErrors, setErrors] = useState(initialErrors);
+
   const validEmailRegex = RegExp(
-    /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+    /^(([^<>()[\],;:\s@]+(\.[^<>()[\],;:\s@]+)*)|(.+))@(([^<>()[\],;:\s@]+\.)+[^<>()[\],;:\s@]{2,})$/i
   );
   const validPasswordRegex = RegExp(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/);
-  const [validated, setValidate] = useState(false);
 
   const validateForm = (errors) => {
     let valid = true;
     Object.values(errors).forEach(
-      // if we have an error string set valid to false
       (val) => val.length > 0 && (valid = false) //If expr1 can be converted to true, returns expr2; else, returns expr1.
     );
     setValidate(valid);
     return valid;
   };
-  const initialErrors = {
-    name: "Please, provide a name.",
-    number: "Number must be 8 characters long.",
-    email: "Please provide a valid e-mail.",
-    password: "Password must be minimum eight characters, at least one letter and one number.",
-    text: "Enter your message.",
-    selectOption: "",
-    radioBoxOption: "One of these options is required.",
-    checkboxOption: "This checkbox is required.",
-  };
-
-  const [stateErrors, setErrors] = useState(initialErrors);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -76,14 +76,8 @@ function FormExample(props) {
       default:
         break;
     }
-    //setErrors({errors, [name]: value})
-    //setErrors({errors, [name]: value});
-    setErrors({ ...errors });
-    console.log(errors);
-    console.log(name);
-    console.log(value);
 
-    // })
+    setErrors({ ...errors });
   };
 
   return (
@@ -216,7 +210,10 @@ function FormExample(props) {
               <Button
                 variant="danger"
                 type="reset"
-                onClick={() => {setErrors(initialErrors); setValidate(false)}}
+                onClick={() => {
+                  setErrors(initialErrors);
+                  setValidate(false);
+                }}
               >
                 Reset
               </Button>
