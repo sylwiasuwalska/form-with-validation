@@ -4,14 +4,13 @@
 ## Table of contents
 * [General info](#general-info)
 * [Live](#live)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#available-scripts)
 * [Features](#features)
 * [Status](#status)
 
 ## General info
-Simple form with validation
+Simple form with validation.
 
 ## Live
 https://sylwiasuwalska.github.io/form-with-validation/
@@ -38,6 +37,7 @@ You will also see any lint errors in the console.
 To-do list:
 
 * Smooth transform for displaying errors
+* Floating labels
 * Show of validated fields
 * Tests
 
