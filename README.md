@@ -14,18 +14,11 @@
 Simple form with validation
 
 ## Live
-
+https://sylwiasuwalska.github.io/form-with-validation/
 
 ## Technologies
 * ReactJS with Hooks, version 16.13.1
 * React Bootstrap, version 1.0.1
-
-
-## Screenshots
-![dark_theme](./src/darktheme.jpg)
-
-
-
 
 ## Setup
 
