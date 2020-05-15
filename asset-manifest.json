@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/form-with-validation/static/css/main.e688caa9.chunk.css",
+    "main.js": "/form-with-validation/static/js/main.4d15111e.chunk.js",
+    "main.js.map": "/form-with-validation/static/js/main.4d15111e.chunk.js.map",
+    "runtime-main.js": "/form-with-validation/static/js/runtime-main.e656f79a.js",
+    "runtime-main.js.map": "/form-with-validation/static/js/runtime-main.e656f79a.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/form-with-validation/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.7dba321b.chunk.js": "/form-with-validation/static/js/2.7dba321b.chunk.js",
+    "static/js/2.7dba321b.chunk.js.map": "/form-with-validation/static/js/2.7dba321b.chunk.js.map",
+    "index.html": "/form-with-validation/index.html",
+    "precache-manifest.34d9838b9c67085ec1a146487c33d78b.js": "/form-with-validation/precache-manifest.34d9838b9c67085ec1a146487c33d78b.js",
+    "service-worker.js": "/form-with-validation/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/form-with-validation/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.e688caa9.chunk.css.map": "/form-with-validation/static/css/main.e688caa9.chunk.css.map",
+    "static/js/2.7dba321b.chunk.js.LICENSE.txt": "/form-with-validation/static/js/2.7dba321b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e656f79a.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.7dba321b.chunk.js",
+    "static/css/main.e688caa9.chunk.css",
+    "static/js/main.4d15111e.chunk.js"
+  ]
+}
